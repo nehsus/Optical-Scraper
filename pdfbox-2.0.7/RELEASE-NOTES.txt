@@ -1,0 +1,101 @@
+Release Notes -- Apache PDFBox -- Version 2.0.7
+
+Introduction
+------------
+
+The Apache PDFBox library is an open source Java tool for working with PDF documents.
+
+This is an incremental bugfix release based on the earlier 2.0.6 release. It contains
+a couple of fixes and small improvements.
+
+For more details on these changes and all the other fixes and improvements
+included in this release, please refer to the following issues on the
+PDFBox issue tracker at https://issues.apache.org/jira/browse/PDFBOX.
+
+Bug
+
+[PDFBOX-3515] - Problems with CourierStd font
+[PDFBOX-3536] - IOException "Invalid dictionary, found: 'r' but expected: '/' at offset 1148" on a valid PDF
+[PDFBOX-3794] - Problem in TextPosition implementation
+[PDFBOX-3795] - PDFMergeUtility error invalid stored block lengths
+[PDFBOX-3798] - Truncated file has first page empty
+[PDFBOX-3799] - Problem in TextPosition's hashCode
+[PDFBOX-3806] - Nullpointer exception in getLeftSideBearing
+[PDFBOX-3807] - CMapParser NullPointerException
+[PDFBOX-3811] - Problem with calling "saveIncrementalForExternalSigning" more than once in the same document
+[PDFBOX-3813] - PDF Box crash when using PDFToImage or PDFDebug
+[PDFBOX-3817] - Signature form names not standard
+[PDFBOX-3821] - Newly added MDP functionality breaks PDFs <1.5
+[PDFBOX-3826] - NPE if RAFDataStream.getCurrentPosition() when TrueTypeFont created from file is reused
+[PDFBOX-3827] - Setting empty values on listbox keeps marked item
+[PDFBOX-3829] - ExtractImages fails for JPX images
+[PDFBOX-3831] - v2.0.6 still has hardcoded reference to BouncyCastleProvider
+[PDFBOX-3832] - PDFBox Won't Embed a Font for a Form Field if Field is Empty
+[PDFBOX-3833] - Characters in wrong order
+[PDFBOX-3836] - PDFToImage: Text missing or background box stacks over
+[PDFBOX-3838] - NPE in PatchMeshesShadingContext.readPatch()
+[PDFBOX-3839] - AIOOB in PDResources.getFont()
+[PDFBOX-3845] - Could not find referenced cmap stream H
+[PDFBOX-3847] - code has bug
+[PDFBOX-3850] - DrawPrintTextLocations should limit bbox paint to font bbox when type 3 font has incorrect large glyph bbox
+[PDFBOX-3852] - Overlay a pdf file which is 750 pages ends up in OutOfMemoryError
+[PDFBOX-3855] - NPE in CFFParser.parse()
+[PDFBOX-3857] - Can not extract exported values for PDRadioButton
+[PDFBOX-3858] - Optimize 1 component DeviceN colorspace
+[PDFBOX-3861] - ClassCastException: org.apache.pdfbox.cos.COSStream cannot be cast to org.apache.pdfbox.cos.COSString
+[PDFBOX-3864] - UTF16 encoded string to PDFDocEncoding
+[PDFBOX-3867] - IndexOutOfBoundsException on CMapParser
+
+Improvement
+
+[PDFBOX-2963] - Remove Bouncy Castle Provider Reference
+[PDFBOX-3820] - [Patch] Improved signing of existing signature fields II
+[PDFBOX-3824] - Optimize TrueType font embedder
+[PDFBOX-3828] - Generate appearance stream for multiselect listboxes
+[PDFBOX-3854] - PDDeviceRGB.toRGBImage should return a RGB-Typed-Image
+[PDFBOX-3859] - Output destination page in PrintBookmarks example
+[PDFBOX-3860] - TilingPaint.getImage() should return an ARGB-Typed-Image
+[PDFBOX-3863] - Support duplex entry in ViewerPreferences
+[PDFBOX-3868] - Optimize usage of COSStream construction
+[PDFBOX-3869] - Splitter.createNewDocument() should be able to consider different MemoryUsageSetting configurations
+
+Task
+
+[PDFBOX-3823] - Question about forming a PDF document, including CMYK images for printing.
+[PDFBOX-3865] - Add OWASP dependency-check to build
+
+
+Release Contents
+----------------
+
+This release consists of a single source archive packaged as a zip file.
+The archive can be unpacked with the jar tool from your JDK installation.
+See the README.txt file for instructions on how to build this release.
+
+The source archive is accompanied by SHA1 and MD5 checksums and a PGP
+signature that you can use to verify the authenticity of your download.
+The public key used for the PGP signature can be found at
+https://svn.apache.org/repos/asf/pdfbox/KEYS.
+
+About Apache PDFBox
+-------------------
+
+Apache PDFBox is an open source Java library for working with PDF documents.
+This project allows creation of new PDF documents, manipulation of existing
+documents and the ability to extract content from documents. Apache PDFBox
+also includes several command line utilities. Apache PDFBox is published
+under the Apache License, Version 2.0.
+
+For more information, visit http://pdfbox.apache.org/
+
+About The Apache Software Foundation
+------------------------------------
+
+Established in 1999, The Apache Software Foundation provides organizational,
+legal, and financial support for more than 100 freely-available,
+collaboratively-developed Open Source projects. The pragmatic Apache License
+enables individual and commercial users to easily deploy Apache software;
+the Foundation's intellectual property framework limits the legal exposure
+of its 2,500+ contributors.
+
+For more information, visit http://www.apache.org/

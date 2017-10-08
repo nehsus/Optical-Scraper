@@ -1,0 +1,41 @@
+SUSHEN KUMAR
+
+——
+
+Please open the "PDFIMG" folder, and run the Start.py script 
+
+
+It works on UTF8 encoded pdfs, which I have previously converted using pyocr and n++.
+It generates a sample .txt output file, in this case:
+
+	Prinicpal_Output.txt
+	delhi.txt
+	Kolkata.txt
+	
+These PDF's have been noise-rectified by converting them to black and white 
+using cv2
+
+	Chennai_Output.txt
+	Allahbad.txt
+	1.txt
+		to be converted into a csv
+
+After running the convert_csv.py script, a csv file is generated using tab and /n as delimitters.
+this CSV is noted:
+
+	Perfect successes:
+	Principal_Output.csv
+	delhi.csv
+	Kolkata.csv
+
+
+
+please open this in a tabbed sheet!
+Chennai.csv was an issue due to columns within undetectable rows-within rows.
+An approach to that using pyocr was tested by me.
+
+Tech/libraries used: python, java, pdfminer, pyocr, opencv, fontbox.jar, n++
+
+I also have a lot of other raw sample data, and other test cases in this folder I approached before formulating my final method.
+
+The FINAL folder contains output data.
